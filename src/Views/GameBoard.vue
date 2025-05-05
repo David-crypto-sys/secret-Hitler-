@@ -225,7 +225,7 @@ export default {
         const unsubscribePlayers = onSnapshotSubcollection(
           "partidas",
           props.codigoSala,
-          "jugadores",
+          "jugadores_partida",
           (jugadores) => {
             const updatedPlayers = jugadores.map((jugador) => ({
               id: jugador.id,
