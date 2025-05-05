@@ -577,7 +577,7 @@ export default {
         for (let i = 0; i < players.value.length; i++) {
           const player = players.value[i];
           const role = shuffledRoles[i];
-          const playerDocRef = doc(db, "partidas", props.codigoSala, "jugadores", player.id);
+          const playerDocRef = doc(db, "partidas", props.codigoSala, "jugadores_partida", player.id);
 
           batch.update(playerDocRef, { rol: role }); // Add update to batch
           players.value[i] = { ...player, rol: role }; // Update local state

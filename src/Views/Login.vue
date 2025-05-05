@@ -59,7 +59,7 @@ const handleLogin = async () => {
         icon: 'success',
         confirmButtonText: 'Continuar'
       }).then(() => {
-        router.push("/create-game");
+        router.push("/home");
       });
     } else {
       Swal.fire({

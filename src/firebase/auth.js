@@ -19,7 +19,7 @@ export const AuthService = {
   // Verificar si el nombre de usuario ya existe
   async isUsernameTaken(username) {
     try {
-      const usersRef = collection(db, 'jugadores')
+      const usersRef = collection(db, 'usuarios')
       const q = query(usersRef, where('nombre', '==', this.capitalizeUsername(username)))
       const querySnapshot = await getDocs(q)
       return !querySnapshot.empty

@@ -24,9 +24,7 @@
       <button class="btn btn-primary w-100 mb-3" @click="iniciarPartida">Iniciar partida</button>
 
       <!-- Botón para unirse a una partida -->
-      <router-link to="/join-game">
-        <button class="btn btn-success w-100 mb-3">Unirse a una partida</button>
-      </router-link>
+      
 
       <!-- Botón para volver -->
       <router-link to="/home">
